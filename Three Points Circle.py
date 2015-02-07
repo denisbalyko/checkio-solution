@@ -30,11 +30,21 @@ def checkio(data):
     E = A * (x1 + x2) + B * (y1 + y2)
     F = C * (x1 + x3) + D * (y1 + y3)
     G = 2*(A*(y3-y2)-B*(x3-x2))
-
     if G == 0:
         return
     x = (D * E - B * F) / G
     y = (A * F - C * E) / G
+    """
+    ma = (y2-y1)/(x2-x1)
+    mb = (y3-y2)/(x3-x2)
+
+    x = (ma*mb*(y1-y3) + mb*(x1+x2) - ma*(x2+x3))/(2*(mb-ma))
+    if not ma == 0:
+        y = (-1/ma)*(x-(x1+x2)/2)+(y1+y2)/2
+    else:
+        y = (-1/mb)*(x-(x2+x3)/2)+(y2+y3)/2
+    """
+
 
     r = math.sqrt((x-x1)*(x-x1)+(y-y1)*(y-y1))
     print "(x-{0})^2+(y-{1})^2={2}^2".format(io(x), io(y), "%.2f" % r)
