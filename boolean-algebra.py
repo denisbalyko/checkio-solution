@@ -4,10 +4,7 @@ def boolean(x, y, operation):
     elif operation == u"disjunction":
         return int(x or y)
     elif operation == u"implication": 
-        if x==1:
-            if y==0:
-                return 0
-        return 1
+        return int(not x or y)
     elif operation == u"exclusive":
         return int((x + y) % 2)
     elif operation == u"equivalence":
