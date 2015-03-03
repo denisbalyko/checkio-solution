@@ -16,7 +16,7 @@ def decode_vigenere(od, oe, ne):
 
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
-if __name__ == '__main__':
+def test_function():
     assert decode_vigenere(u'DONTWORRYBEHAPPY',
                           u'FVRVGWFTFFGRIDRF',
                           u'DLLCZXMFVRVGWFTF') == "BEHAPPYDONTWORRY", "CHECKIO"

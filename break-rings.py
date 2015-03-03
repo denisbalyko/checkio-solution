@@ -17,7 +17,8 @@ def break_rings(rings):
             if link_count == 0:
                 return i
 
-if __name__ == '__main__':
+
+def test_function():
     # These "asserts" using only for self-checking and not necessary for auto-testing
     assert break_rings(({1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {4, 6})) == 3, "example"
     assert break_rings(({1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4})) == 3, "All to all"

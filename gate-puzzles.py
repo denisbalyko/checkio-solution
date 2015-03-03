@@ -46,7 +46,8 @@ def find_word(message):
     maxi = [i for i, j in enumerate(sumall) if j == m]
     return word_list[maxi[-1]]
 
-if __name__ == '__main__':
+
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert find_word(u"Friend Fred and friend Ted.") == "friend", "Friend"
     assert find_word(u"Speak friend and enter.") == "friend", "Friend"

@@ -15,7 +15,7 @@ def capture(matrix):
     return max(map(max, matrix))
 
 
-if __name__ == '__main__':
+def test_function():
     # These "asserts" using only for self-checking and not necessary for auto-testing
     assert capture([[0, 1, 0, 1, 0, 1],
                     [1, 8, 1, 0, 0, 0],

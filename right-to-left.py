@@ -5,7 +5,8 @@ def left_join(phrases):
 
 left_join = lambda p: ",".join(p).replace('right', 'left')
 
-if __name__ == '__main__':
+
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert left_join(("left", "right", "left", "stop")) == "left,left,left,stop", "All to left"
     assert left_join(("bright aright", "ok")) == "bleft aleft,ok", "Bright Left"

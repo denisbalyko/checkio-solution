@@ -9,7 +9,8 @@ def clock_angle(time):
     else:
         return 360-abs(deg_hour-deg_minute)
 
-if __name__ == '__main__':
+
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert clock_angle("02:30") == 105, "02:30"
     assert clock_angle("13:42") == 159, "13:42"

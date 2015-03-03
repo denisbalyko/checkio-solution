@@ -7,7 +7,7 @@ def checkio(matrix):
 
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
-if __name__ == '__main__':
+def test_function():
     assert checkio([
         [0, 1, 2],
         [-1, 0, 1],

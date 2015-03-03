@@ -13,7 +13,7 @@ def digit_stack(commands):
     return answer
 
 
-if __name__ == '__main__':
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert digit_stack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
                         "PUSH 9", "PUSH 0", "PEEK", "POP", "PUSH 1", "PEEK"]) == 8, "Example"

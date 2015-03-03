@@ -8,7 +8,8 @@ def check_pangram(text):
 
 check_pangram = lambda t: set(ascii_lowercase).issubset(set(t.lower()))
 
-if __name__ == '__main__':
+
+def test_function():
     # These "asserts" using only for self-checking and not necessary for auto-testing
     assert check_pangram("The quick brown fox jumps over the lazy dog."), "brown fox"
     assert not check_pangram("ABCDEF"), "ABC"

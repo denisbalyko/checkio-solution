@@ -1,8 +1,8 @@
-checkio = lambda d: zip(*d)
+checkio = lambda d: list(map(list, zip(*d)))
 
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
-if __name__ == '__main__':
+def test_function():
     assert checkio([[1, 2, 3],
                     [4, 5, 6],
                     [7, 8, 9]]) == [[1, 4, 7],

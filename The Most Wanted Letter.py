@@ -1,4 +1,6 @@
 import re
+
+
 def checkio(text):
     maxcol, maxcolCurrent, maxsymb, maxsymbLast = 0, 0, '', ''
     for s in sorted(text.lower()):
@@ -13,7 +15,8 @@ def checkio(text):
         maxsymbLast = s
     return maxsymb
 
-if __name__ == '__main__':
+
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio("Hello World!") == "l", "Hello test"
     assert checkio("How do you do?") == "o", "O is most wanted"

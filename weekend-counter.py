@@ -9,8 +9,9 @@ def checkio(from_date, to_date):
         from_date = from_date + datetime.timedelta(days=1)
     return ans
 
+
 #These "asserts" using only for self-checking and not necessary for auto-testing
-if __name__ == '__main__':
+def test_function():
     assert checkio(datetime.date(2013, 9, 18), datetime.date(2013, 9, 23)) == 2, "1st example"
     assert checkio(datetime.date(2013, 1, 1), datetime.date(2013, 2, 1)) == 8, "2nd example"
     assert checkio(datetime.date(2013, 2, 2), datetime.date(2013, 2, 3)) == 2, "3rd example"

@@ -23,7 +23,7 @@ class Friends:
         return {n for n in self.names() if {n, name} in self.connections}
 
 
-if __name__ == '__main__':
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     letter_friends = Friends(({"a", "b"}, {"b", "c"}, {"c", "a"}, {"a", "c"}))
     digit_friends = Friends([{"1", "2"}, {"3", "1"}])

@@ -9,7 +9,8 @@ def letter_queue(commands):
             stack.append(letter)
     return "".join(stack)
 
-if __name__ == '__main__':
+
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert letter_queue(["PUSH A", "POP", "POP", "PUSH Z", "PUSH D", "PUSH O", "POP", "PUSH T"]) == "DOT", "dot example"
     assert letter_queue(["POP", "POP"]) == "", "Pop, Pop, empty"

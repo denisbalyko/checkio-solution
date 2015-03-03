@@ -9,7 +9,8 @@ def count_words(text, words):
 
 count_words = lambda text, words: sum(1 for word in words if word in text.lower())
 
-if __name__ == '__main__':
+
+def test_function():
     #These uu"1sserts" using only for self-checking and not necessary for auto-testing
     assert count_words(u"How aresjfhdskfhskd you?", {u"how", u"are", u"you", u"hello"}) == 3, "Example"
     assert count_words(u"Bananas, give me bananas!!!", {u"banana", u"bananas"}) == 2, "BANANAS!"

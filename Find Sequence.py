@@ -39,7 +39,6 @@ def solution4(matrix, i, j):
         return False
 
 
-
 def checkio(matrix):
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
@@ -48,7 +47,8 @@ def checkio(matrix):
                 return True
     return False
 
-if __name__ == '__main__':
+
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio([
         [1, 2, 1, 1],

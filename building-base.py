@@ -28,7 +28,7 @@ class Building:
         return "Building(%g, %g, %g, %g, %g)" % (self.south, self.west, self.width_WE, self.width_NS, self.height)
 
 
-if __name__ == '__main__':
+def test_function():
     #These "asserts" using only for self-checking and not necessary for auto-testing
     def json_dict(d):
         return dict((k, list(v)) for k, v in d.items())
