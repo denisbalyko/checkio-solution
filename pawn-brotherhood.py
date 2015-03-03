@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 def safe_pawns(pawns):
     def get_coord(cell):
         return ord(cell[0])-96, int(cell[1])

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 def count_neighbours(grid, row, col):
 
     directions = ((-1, 1), # ↖
