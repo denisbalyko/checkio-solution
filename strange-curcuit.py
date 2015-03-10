@@ -127,7 +127,7 @@ def test_last_point():
         [2, 4, 7],
     ]
     """
-    assert get_last_point([[1, 1, 1], [1, 1, 1], [1, 1, 1]], 0, 0, 2, 2) == 5, "3x3 ones"
+    assert get_last_point([[1, 1, 1], [1, 1, 1], [1, 1, 1]], 0, 0, 2, 2) == 4, "3x3 ones"
     """
     [
         [1, 2, 3],
@@ -135,7 +135,7 @@ def test_last_point():
         [3, 4, 5],
     ]
     """
-    assert get_last_point([[10, 10], [10, 10]], 0, 0, 1, 1) == 30, "2x2 tens"
+    assert get_last_point([[10, 10], [10, 10]], 0, 0, 1, 1) == 20, "2x2 tens"
     """
     [
         [10, 20],
@@ -150,11 +150,11 @@ def test_last_point():
         [1, 1, 0, 1, 1, 1, 1],
         [1, 0, 0, 1, 1, 1, 1],
         [1, 0, 1, 1, 1, 1, 1]
-    ], 0, 0, 6, 6) == 8, "big ex"
+    ], 0, 0, 6, 6) == 7, "big ex"
 
     assert get_last_point([[1, 2, 3],
                            [1, 2, 3],
-                           [1, 2, 3]], 0, 0, 2, 2) == 8, "3x3 ones"
+                           [1, 2, 3]], 0, 0, 2, 2) == 7, "3x3 ones"
 
 
 def test_function():
@@ -173,3 +173,4 @@ if __name__ == '__main__':
     test_start_pos()
     test_spiral()
     test_function()
+    test_last_point()
