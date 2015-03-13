@@ -18,3 +18,6 @@ def test_function():
     assert boolean(1, 1, u"implication") == 1, "material"
     assert boolean(0, 1, u"exclusive") == 1, "xor"
     assert boolean(0, 1, u"equivalence") == 0, "same?"
+
+if __name__ == '__main__':
+    test_function()

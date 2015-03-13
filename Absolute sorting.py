@@ -13,6 +13,15 @@ def test_function():
             raise TypeError("The result should be a list or tuple.")
         return list(array)
 
-    assert check_it(checkio((-20, -5, 10, 15))) == [-5, 10, 15, -20], "Example"  # or (-5, 10, 15, -20)
-    assert check_it(checkio((1, 2, 3, 0))) == [0, 1, 2, 3], "Positive numbers"
-    assert check_it(checkio((-1, -2, -3, 0))) == [0, -1, -2, -3], "Negative numbers"
+    assert check_it(checkio(
+        (-20, -5, 10, 15)
+    )) == [-5, 10, 15, -20], "Example"  # or (-5, 10, 15, -20)
+    assert check_it(checkio(
+        (1, 2, 3, 0)
+    )) == [0, 1, 2, 3], "Positive numbers"
+    assert check_it(checkio(
+        (-1, -2, -3, 0)
+    )) == [0, -1, -2, -3], "Negative numbers"
+
+if __name__ == '__main__':
+    test_function()

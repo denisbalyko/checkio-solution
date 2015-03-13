@@ -41,3 +41,6 @@ def test_function():
     assert b.volume() == 60, "Volume"
     assert b2.volume() == 30, "Volume2"
     assert str(b) == "Building(1, 2, 2, 3, 10)", "String"
+
+if __name__ == '__main__':
+    test_function()

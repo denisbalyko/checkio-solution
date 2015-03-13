@@ -19,3 +19,6 @@ def test_function():
     assert clock_angle("00:00") == 0, "Zero"
     assert clock_angle("12:01") == 5.5, "Little later"
     assert clock_angle("18:00") == 180, "Opposite"
+
+if __name__ == '__main__':
+    test_function()

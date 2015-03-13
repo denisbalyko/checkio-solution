@@ -29,3 +29,6 @@ def test_function():
     assert translate(u"hoooowe yyyooouuu duoooiiine") == "how you doin", "Joey?"
     assert translate(u"aaa bo cy da eee fe") == "a b c d e f", "Alphabet"
     assert translate(u"sooooso aaaaaaaaa") == "sos aaa", "Mayday, mayday"
+
+if __name__ == '__main__':
+    test_function()

@@ -18,3 +18,6 @@ def test_function():
     assert checkio("[1+1]+(2*2)-{3/3}") == True, "Different operators"
     assert checkio("(({[(((1)-2)+3)-3]/3}-3)") == False, "One is redundant"
     assert checkio("2+3") == True, "No brackets, no problem"
+
+if __name__ == '__main__':
+    test_function()
