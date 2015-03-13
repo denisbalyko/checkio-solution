@@ -48,7 +48,6 @@ def find_word(message):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert find_word(u"Friend Fred and friend Ted.") == "friend", "Friend"
     assert find_word(u"Speak friend and enter.") == "friend", "Friend"
     assert find_word(u"Beard and Bread") == "bread", "Bread is Beard"

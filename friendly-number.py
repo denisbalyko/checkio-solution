@@ -18,7 +18,7 @@ def friendly_number(number, base=1000, decimals=0, suffix='',
 
     return zn+str(answer)+prefix+suffix
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
+
 def test_function():
     assert friendly_number(102) == '102', '102'
     assert friendly_number(10240) == '10k', '10k'

@@ -21,7 +21,6 @@ def checkio(matrix):
     return [count[id], val[id]]
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert checkio([
         [1, 2, 3, 4, 5],

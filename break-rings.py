@@ -19,7 +19,6 @@ def break_rings(rings):
 
 
 def test_function():
-    # These "asserts" using only for self-checking and not necessary for auto-testing
     assert break_rings(
         ({1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {4, 6})
     ) == 3, "example"

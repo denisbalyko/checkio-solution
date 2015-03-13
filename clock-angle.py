@@ -11,7 +11,6 @@ def clock_angle(time):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert clock_angle("02:30") == 105, "02:30"
     assert clock_angle("13:42") == 159, "13:42"
     assert clock_angle("01:42") == 159, "01:42"

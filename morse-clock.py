@@ -24,7 +24,6 @@ def checkio(time_string):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio(u"10:37:49") == ".- .... : .-- .--- : -.. -..-", "First Test"
     assert checkio(u"21:34:56") == "-. ...- : .-- .-.. : -.- .--.", "Second Test"
     assert checkio(u"00:1:02") == ".. .... : ... ...- : ... ..-.", "Third Test"

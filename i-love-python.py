@@ -6,5 +6,4 @@ def i_love_python():
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert i_love_python() == "I love Python!"

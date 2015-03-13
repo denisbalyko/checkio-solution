@@ -10,7 +10,6 @@ def checkio(from_date, to_date):
     return ans
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert checkio(datetime.date(2013, 9, 18), datetime.date(2013, 9, 23)) == 2, "1st example"
     assert checkio(datetime.date(2013, 1, 1), datetime.date(2013, 2, 1)) == 8, "2nd example"

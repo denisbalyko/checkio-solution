@@ -10,7 +10,6 @@ def checkio(data):
 checkio = lambda data: (sorted(data)[int(len(sorted(data))/2)]+float(sorted(data)[int(len(sorted(data))/2)-1]))/2 if not (len(sorted(data)) % 2) else sorted(data)[int(len(sorted(data))/2)]
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert checkio([1, 2, 3, 4, 5]) == 3, "Sorted list"
     assert checkio([3, 1, 2, 5, 3]) == 3, "Not sorted list"

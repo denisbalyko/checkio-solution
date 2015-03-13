@@ -6,7 +6,6 @@ def checkio(matrix):
     return True
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert checkio([
         [0, 1, 2],

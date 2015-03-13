@@ -2,7 +2,6 @@
 checkio = lambda d: list(map(list, zip(*d)))
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert isinstance(checkio([[0]]).pop(), list) is True, "Match types"
     assert checkio([[1, 2, 3],

@@ -49,7 +49,6 @@ def checkio(matrix):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio([
         [1, 2, 1, 1],
         [1, 1, 4, 1],

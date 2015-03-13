@@ -17,7 +17,6 @@ def checkio(text):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio("Hello World!") == "l", "Hello test"
     assert checkio("How do you do?") == "o", "O is most wanted"
     assert checkio("One") == "e", "All letter only once."

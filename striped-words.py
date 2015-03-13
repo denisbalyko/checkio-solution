@@ -25,7 +25,6 @@ def checkio(text):
     return ans
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert checkio(u"My name is ...") == 3, "All words are striped"
     assert checkio(u"Hello world") == 0, "No one"

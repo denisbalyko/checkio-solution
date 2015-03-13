@@ -15,7 +15,6 @@ def decode_vigenere(od, oe, ne):
     return "".join([chr(65 + (ord(ne[i])-ord(key[i % len(key)])) % 26) for i in range(len(ne))])
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert decode_vigenere(u'DONTWORRYBEHAPPY',
                           u'FVRVGWFTFFGRIDRF',

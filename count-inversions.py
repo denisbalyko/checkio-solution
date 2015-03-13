@@ -11,7 +11,6 @@ def count_inversion(sequence):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert count_inversion((1, 2, 5, 3, 4, 7, 6)) == 3, "Example"
     assert count_inversion((0, 1, 2, 3)) == 0, "Sorted"
     assert count_inversion((99, -99)) == 1, "Two numbers"

@@ -24,7 +24,6 @@ class Friends:
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     letter_friends = Friends(({"a", "b"}, {"b", "c"}, {"c", "a"}, {"a", "c"}))
     digit_friends = Friends([{"1", "2"}, {"3", "1"}])
     assert letter_friends.add({"c", "d"}) is True, "Add"

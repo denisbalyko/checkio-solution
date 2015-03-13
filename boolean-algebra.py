@@ -12,7 +12,6 @@ def boolean(x, y, operation):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert boolean(1, 0, u"conjunction") == 0, "and"
     assert boolean(1, 0, u"disjunction") == 1, "or"
     assert boolean(1, 1, u"implication") == 1, "material"

@@ -13,7 +13,6 @@ def weak_point(matrix):
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     assert isinstance(weak_point([[1]]), (list, tuple)), "The result should be a list or a tuple"
     assert list(weak_point([[7, 2, 7, 2, 8],
                             [2, 9, 4, 1, 7],

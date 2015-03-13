@@ -29,7 +29,6 @@ class Building:
 
 
 def test_function():
-    #These "asserts" using only for self-checking and not necessary for auto-testing
     def json_dict(d):
         return dict((k, list(v)) for k, v in d.items())
 

@@ -10,7 +10,6 @@ def checkio(expression):
     return not stack
 
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 def test_function():
     assert checkio("((5+3)*2+1)") == True, "Simple"
     assert checkio("{[(3+1)+2]+}") == True, "Different types"
