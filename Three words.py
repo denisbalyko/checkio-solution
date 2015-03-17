@@ -10,9 +10,12 @@ def checkio(words):
     return False
 
 
+def test_function():
+    assert checkio("Hello World hello") is True, "Hello"
+    assert checkio("He is 123 man") is False, "123 man"
+    assert checkio("1 2 3 4") is False, "Digits"
+    assert checkio("bla bla bla bla") is True, "Bla Bla"
+    assert checkio("Hi") is False, "Hi"
 
-print checkio("Hello World hello") == True, "Hello"
-print checkio("He is 123 man") == False, "123 man"
-print checkio("1 2 3 4") == False, "Digits"
-print checkio("bla bla bla bla") == True, "Bla Bla"
-print checkio("Hi") == False, "Hi"
+if __name__ == '__main__':
+    test_function()

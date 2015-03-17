@@ -48,3 +48,6 @@ def test_function():
         [4,4,2,4,4,2,4],
         [3,4,4,4,4,4,2]
     ]) == [15,4], '15 of 4'
+
+if __name__ == '__main__':
+    test_function()

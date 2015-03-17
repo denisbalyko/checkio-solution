@@ -4,7 +4,8 @@ import re
 def checkio(text):
     maxcol, maxcolCurrent, maxsymb, maxsymbLast = 0, 0, '', ''
     for s in sorted(text.lower()):
-        if not re.search('[a-z]+',s): continue
+        if not re.search('[a-z]+', s):
+            continue
         maxsymbCurrent = s
         if maxsymbLast != maxsymbCurrent:
             maxcolCurrent = 1
@@ -26,3 +27,6 @@ def test_function():
     print("Start the long test")
     assert checkio("a" * 9000 + "b" * 1000) == "a", "Long."
     print("The local tests are done.")
+
+if __name__ == '__main__':
+    test_function()

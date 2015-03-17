@@ -19,3 +19,6 @@ def test_function():
         [0, 1, 2],
         [-1, 0, 1],
         [-3, -1, 0]]) == False, "3rd example"
+
+if __name__ == '__main__':
+    test_function()

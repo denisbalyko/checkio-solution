@@ -17,9 +17,9 @@ def decode_vigenere(od, oe, ne):
 
 def test_function():
     assert decode_vigenere(u'DONTWORRYBEHAPPY',
-                          u'FVRVGWFTFFGRIDRF',
-                          u'DLLCZXMFVRVGWFTF') == "BEHAPPYDONTWORRY", "CHECKIO"
+                           u'FVRVGWFTFFGRIDRF',
+                           u'DLLCZXMFVRVGWFTF') == "BEHAPPYDONTWORRY", "CHECKIO"
     assert decode_vigenere(u'HELLO', u'OIWWC', u'ICP') == "BYE", "HELLO"
     assert decode_vigenere(u'LOREMIPSUM',
-                          u'OCCSDQJEXA',
-                          u'OCCSDQJEXA') == "LOREMIPSUM", "DOLORIUM"
+                           u'OCCSDQJEXA',
+                           u'OCCSDQJEXA') == "LOREMIPSUM", "DOLORIUM"

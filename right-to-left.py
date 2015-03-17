@@ -11,3 +11,6 @@ def test_function():
     assert left_join(("bright aright", "ok")) == "bleft aleft,ok", "Bright Left"
     assert left_join(("brightness wright",)) == "bleftness wleft", "One phrase"
     assert left_join(("enough", "jokes")) == "enough,jokes", "Nothing to replace"
+
+if __name__ == '__main__':
+    test_function()
