@@ -1,29 +1,9 @@
-def f(a, F, m, n):
-    k = []
-    for i in range(0, n+2):
-        try:
-            if isinstance(a[i], int):
-                k.append(a[i])
-        except:
-            k.append(0)
-            for i, d in enumerate(F):
-                if d:
-                    k[len(k)-1] += m[i]*k[len(k) - 1 - d]
-    return k[n]
-
-
 def fibgolf(t, n):
-    I = [1, 1, 1]
-    s = {
-        'fibonacci': ([0, 1, None], [1, 2, None], I, n),
-        'tribonacci': ([0, 1, 1], [1, 2, 3], I, n),
-        'lucas': ([2, 1, None], [1, 2, None], I, n),
-        'jacobsthal': ([0, 1, None], [1, 2, None], [1, 2, 1], n),
-        'pell': ([0, 1, None], [1, 2, None], [2, 1, 1], n),
-        'perrin': ([3, 0, 2], [None, 2, 3], I, n),
-        'padovan': ([0, 1, 1], [None, 2, 3], I, n),
-    }
-    return f(*s[t])
+    I, o, l  = [1]*3, [0, 1], [1, 2]
+    s = {'ib': (o, l, I),'ri': (o + [1], l + [3], I),'uc': ([2, 1], l, I),'ac': (o, l, l + [1]),'el': (o, l, [2, 1, 1]),'er': ([3, 0, 2], [2, 3], I),'ad': (o + [1], [2, 3], I)}
+    a, F, m = s[t[1:3]]
+    while len(a)<n+2: a.append(sum([m[i]*a[-d] for i, d in enumerate(F)]))
+    return a[n]
 
 
 def test_function():
