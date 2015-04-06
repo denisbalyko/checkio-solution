@@ -9,6 +9,7 @@
 
 import marshal
 
+
 def check_code(codestring):
     codestring = codestring.replace("\r\n", "\n")
     codestring = codestring.replace("\r", "\n")
